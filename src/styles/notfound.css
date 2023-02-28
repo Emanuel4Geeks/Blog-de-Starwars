@@ -1,0 +1,14 @@
+
+.notFound :is(picture, img, source) {
+    display: block;
+}
+
+.layout:has(.notFound){
+    background-image: none!important;
+}
+
+@media screen and (min-width: 768px) {
+    .notFound :is(picture, img, source) {
+        width: 100vw;
+    }
+}

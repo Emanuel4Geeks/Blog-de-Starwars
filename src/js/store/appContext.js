@@ -4,8 +4,12 @@ import getState from "./flux.js";
 // Don't change, here is where we initialize our context, by default it's just going to be null.
 export const Context = React.createContext(null);
 
-// This function injects the global store to any view/component where you want to use it, we will inject the context to layout.js, you can see it here:
-// https://github.com/4GeeksAcademy/react-hello-webapp/blob/master/src/js/layout.js#L35
+/**
+ * This function injects the global store to any view/component where you want to use it, we will inject the context to layout.js, you can see it here:
+ * @link https://github.com/4GeeksAcademy/react-hello-webapp/blob/master/src/js/layout.js#L35
+ * @param {React.Component} PassedComponent 
+ * @returns 
+ */
 const injectContext = PassedComponent => {
 	const StoreWrapper = props => {
 		//this will be passed as the contenxt value
@@ -22,6 +26,11 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
+			const actions = state.actions;
+
+			actions.loadDataPersonas();
+			actions.loadDataPlanetas();
+			actions.loadDataVehiculos();
 			/**
 			 * EDIT THIS!
 			 * This function is the equivalent to "window.onLoad", it only runs once on the entire application lifetime

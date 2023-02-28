@@ -1,5 +1,5 @@
 {
-	"name": "react-hello-webapp",
+	"name": "star-wars-blog",
 	"engines": {
 		"node": "16.x"
 	},
@@ -23,6 +23,9 @@
 		{
 			"name": "Ignacio Cordoba",
 			"url": "http://github.com/nachovz"
+		},{
+			"name": "Emanuel Ciotoi",
+			"url": "https://github.com/emanuel-c4"
 		}
 	],
 	"license": "ISC",

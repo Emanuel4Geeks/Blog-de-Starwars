@@ -1,3 +1,40 @@
 /* 
-    General Styles
+General Styles
 */
+
+/* Scrollbar settings */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bs-teal) var(--bs-gray-400);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--bs-gray-400);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bs-gray-400);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--bs-teal);
+}
+
+main *::-webkit-scrollbar,
+main *::-webkit-scrollbar-track,
+main *::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+
+.layout {
+  background: center center no-repeat fixed;
+  background-image: url("https://www.todofondos.net/wp-content/uploads/star-wars-hd-wallpaper-fondo-e-imagen-1-scaled.jpg");
+  background-size: cover;
+}
+
+.layout.hide {
+  background-image: none !important;
+}

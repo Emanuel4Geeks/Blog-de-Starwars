@@ -1,0 +1,13 @@
+nav *::-webkit-scrollbar,
+nav *::-webkit-scrollbar-track,
+nav *::-webkit-scrollbar-thumb {
+  border-radius: 0px 3px 3px 0px;
+}
+
+nav #listFav{
+  max-height: 50vh;
+}
+
+nav.navbar img {
+  height: calc( 1.5vw + 3vh  );
+}
